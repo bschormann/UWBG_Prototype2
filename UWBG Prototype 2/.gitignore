@@ -6,6 +6,8 @@
 *.exe
 *.o
 *.so
+# Following not in .gitignore from github
+/bin
  
 # Packages #
 ############
@@ -35,3 +37,4 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+/bin/
