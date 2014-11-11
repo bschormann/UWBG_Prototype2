@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        >
+        
+        <Button android:id="@+id/bookmark_plants_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:layout_weight="0.33"
+            android:background="@drawable/yellow_button"
+            android:text="Plants"
+            android:textColor="@color/green"
+            android:layout_margin="5dp"
+            />
+         <Button android:id="@+id/bookmark_trails_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:layout_weight="0.33"
+            android:background="@drawable/yellow_button"
+            android:text="Trails"
+            android:textColor="@color/green"
+            android:layout_margin="5dp"
+            />
+         <Button android:id="@+id/bookmark_pins_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:layout_weight="0.33"
+            android:background="@drawable/yellow_button"
+            android:text="Pins"
+            android:layout_margin="5dp"
+            android:textColor="@color/green"
+            />      
+        
+    </LinearLayout>
+    
+    <ListView android:id="@+id/bookmark_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:layout_margin="5dp"
+    />
+    
+    <Button android:id="@+id/add_bookmark_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:text="Add a new plant to Bookmarks"
+        android:background="@drawable/yellow_button"
+        android:drawableRight="@drawable/purplechevron"
+     /> 
+</LinearLayout>

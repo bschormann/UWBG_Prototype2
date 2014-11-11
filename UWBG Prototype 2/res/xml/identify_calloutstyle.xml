@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <calloutViewStyle
+        style="app:@style/darkgray_layout"
+        anchor="9dip"
+        backgroundColor="#FF00FFFF"
+        cornerCurve="15dip"
+        flat="true"
+        frameColor="#FFC7C7C7"
+        titleTextColor="#000000"
+        maxWidth="400dip" 
+        />
+
+</resources>

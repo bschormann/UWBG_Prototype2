@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/identifyCallout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+
+   
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+         android:orientation="horizontal">      
+       
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UWBG Accession#:"
+            android:textColor="@color/dark_blue"
+            />
+
+        <TextView
+            android:id="@+id/accession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title" />
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+         android:orientation="horizontal">      
+       
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scientific Name:"
+            android:textColor="@color/dark_blue"
+            />
+
+        <TextView
+            android:id="@+id/scientificn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title" />
+        </LinearLayout>
+          <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+         android:orientation="horizontal">      
+       
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Family:"
+            android:textColor="@color/dark_blue"
+            />
+
+          <TextView
+            android:id="@+id/family"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/plantname" />       
+   
+        </LinearLayout>  
+        
+           <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+         android:orientation="horizontal">      
+       
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Family Common Name:"
+            android:textColor="@color/dark_blue"
+            />
+
+          <TextView
+            android:id="@+id/family_common"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/plantname" />       
+   
+        </LinearLayout>  
+     
+           
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+         android:orientation="horizontal"
+         android:layout_marginTop="10dp">      
+       
+        <TextView android:id="@+id/addbookmarks_callout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="ADD to My Bookmarks"
+            android:textColor="#FFFF0000"
+            />
+
+         <TextView 
+            android:id="@+id/close_callout"
+            android:layout_width="0dp"  
+            android:layout_height="wrap_content"
+            android:layout_weight="1"        
+            android:text="close"
+            android:textColor="#FFFF0000"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="right"
+            />                 
+   
+        </LinearLayout>    
+</LinearLayout>

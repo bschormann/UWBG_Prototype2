@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+     
+     <item android:id="@+id/home" 
+        android:icon="@drawable/greenhouse"
+        android:showAsAction="always"
+        android:title="home"
+        />
+    
+  <!--   <item android:id="@+id/trails" 
+        android:icon="@drawable/greentrail"
+        android:showAsAction="always|withText"
+        android:title="trails"
+        /> -->
+     <item android:id="@+id/search"
+          android:title="Search"
+          android:showAsAction="always"
+          android:icon="@drawable/glass"
+          android:actionViewClass="android.widget.SearchView" 
+          />
+   <!--  <item android:id="@+id/maps" 
+        android:icon="@drawable/greenmap"
+        android:showAsAction="always"
+        android:title="Map"
+        />
+    <item android:id="@+id/bookmarks" 
+        android:icon="@drawable/greenbookmarks"
+        android:showAsAction="always"
+        />   --> 
+   
+</menu>

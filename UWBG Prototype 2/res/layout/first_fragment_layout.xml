@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" 
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    >
+  
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/rhody"
+        />
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.6"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="6dp"
+        android:padding="2dp"
+        >      
+        <Button android:id="@+id/featured_garden_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/main_button" 
+            android:layout_marginRight="5dp"
+            android:drawableTop="@drawable/featuredgarden"
+            android:text="Featured Gardens"
+            android:padding="10dp"
+            /> 
+        <Button android:id="@+id/visitor_info_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/main_button" 
+             android:drawableTop="@drawable/information"
+            android:text="Visitor Information"
+            
+            android:padding="10dp"
+            /> 
+        
+    </LinearLayout>
+     <LinearLayout android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            
+            >
+        <Button android:id="@+id/arboretum_events_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/main_button" 
+            android:layout_marginRight="5dp"
+             android:drawableTop="@drawable/calendar"
+            android:text="Arboretum Events"
+            
+            android:padding="10dp"
+            /> 
+        <Button android:id="@+id/park_history_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/main_button" 
+            android:layout_marginLeft="5dp"
+             android:drawableTop="@drawable/yellowpinecone"
+            android:text="Park History"
+           
+            android:padding="10dp"
+            /> 
+            
+        </LinearLayout>
+
+</LinearLayout>

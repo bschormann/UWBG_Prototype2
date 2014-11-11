@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Washington Park Arboretum</string>
+    <string name="under_construction">Under Construction</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="homepage_image_view">Washington Park Arboretum Homepage Image</string>
+    <string name="visitor_information_image_view">Visitor Information Image</string>
+    <string name="arboretum_events_image_view">Arboretum Events Image</string>
+    <string name="help_page">Help Page</string>
+    <string name="arboretum_events_page">Arboretum Events Page</string>
+    <string name="title_activity_splash">Splash Screen</string>
+    <string name="title_activity_about">About</string>
+    <string name="title_activity_website">Botanic Gardens Website</string>
+    <string name="title_activity_help">Help</string>
+    <string name="title_activity_visitor_information">Visitor Information</string>
+    <string name="title_arboretum_events">Arboretum Events</string>
+    <string name="splash_screen">Washington Park Splash Screen</string>
+    <string name="welcome">Welcome</string>
+    <string name="to_the">to the WashingtonArboretum</string>
+    <string name="about_button">About Button</string>
+    <string name="www_button">WWW Button</string>
+    <string name="help_button">Help Button</string>
+    <string name="provide_feedback_button">Provide Feedback Button</string>
+    <string name="featured_gardens_button">Featured Gardens Button</string>
+    <string name="visitor_information_button">Visitor Information Button</string>
+    <string name="arboretum_events_button">Arboretum Events Button</string>
+    <string name="park_history_button">Park History Button</string>
+    <string name="trails_button">Trails Button</string>
+    <string name="plant_lookup_button">Plant Lookup</string>
+    <string name="map_button">Map Button</string>
+    <string name="okay_button">Okay Button</string>
+    <string name="cancel_button">Cancel Button</string>
+    <string name="bookmarks_button">Bookmarks</string>
+    <string name="about">About</string>
+    <string name="www">Website</string>
+    <string name="help">Help</string>
+    <string name="provide_feedback">Feedback</string>
+    <string name="featured_gardens">Featured Gardens</string>
+    <string name="visitor_information">Visitor Information</string>
+    <string name="arboretum_events">Arboretum Events</string>
+    <string name="park_history">Park History</string>
+    <string name="trails">"Trails\n"</string>
+    <string name="plant_lookup">"Plant\nLookup"</string>
+    <string name="map">"Map\n"</string>
+    <string name="bookmarks">"Book\nmarks"</string>
+    <string name="okay">Okay</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_park_history">Park History</string>
+    <string name="title_activity_featured_gardens">Featured Gardens</string>
+    <string name="title_activity_arboretum_events">Arboretum Events</string>
+    <string name="title_activity_interim_arboretum_events">InterimArboretumEventsActivity</string>
+    <string name="hello">Hello World, UWArboretumActivity!</string>
+    <string name="title_activity_first_">First_Activity</string>
+    <string name="mapUrl">http://uwbgmaps.cfr.washington.edu/arcgis/rest/services/PublicFeatures/MapServer/</string>
+    <string name="title_activity_second_">Second_Activity</string>
+    <string name="Dialog_text">Welcome to the Washington Park Arboretum interactive map. This map contains plant
+         locations and data for the entire living collection, or curated trees and shrubs, 
+         growing in the Arboretum. You may tab on a place on the map to see the plants inforamtion. You also can search
+         a plant by name, family or scientific name to see its location on the map.    	</string>
+    <string name="plantlookupst">Find plants nearby your current location or enter a search below to find something more specific.</string>
+    <string name="title_activity_back_door_helper">Back Door Helper</string>
+    <string name="title_activity_map">Arboretum Map</string>
+    <string name="title_activity_uwarboretum">Arboretum Map</string>
+    <string name="title_activity_uwarboretum_activity_test">UWArboretumActivityTest</string>
+    <string name="title_activity_trails">Arboretum Trails</string>
+    <string name="nearby_button">See what\'s nearby</string>
+    <string name="or">OR</string>
+    <string name="BGUrl">http://uwbgmaps.cfr.washington.edu/arcgis/rest/services/UWBG/MapServer/</string>
+    <string name="title_activity_fragment">FragmentActivity</string>
+    <string name="title_featured_gardens">Featured Gardens</string>
+    <string-array name="featured_gardens_titles">
+        <item>Orin and Althea Soest Herbaceous Display Garden</item>
+        <item>Seattle Garden Club Fragrance Garden</item>
+      	<item>Marilou Goodfellow Grove</item>
+        <item>McVay Courtyard</item>
+        <item>Union Bay Natural Area</item>
+        <item>Yesler Swamp Trail</item>
+        <item>Pacific Connections Garden</item>
+        <item>Witt Winter Garden</item>
+        <item>Shoreline</item>
+        <item>Japanese Garden</item>
+    </string-array>
+    <string-array name="featured_gardens_urls">
+        <item>http://depts.washington.edu/uwbg/gardens/cuh/soest.php</item>
+        <item>http://depts.washington.edu/uwbg/gardens/cuh/fragrance.shtml</item>
+      	<item>http://depts.washington.edu/uwbg/gardens/cuh/goodfellow_grove.shtml</item>
+        <item>http://depts.washington.edu/uwbg/gardens/cuh/mcvay.shtml</item>
+        <item>http://depts.washington.edu/uwbg/research/ubna.shtml</item>
+        <item>http://yeslerswamp.org/</item>
+        <item>http://depts.washington.edu/uwbg/gardens/wpa/pacific_connections.shtml</item>
+        <item>http://depts.washington.edu/uwbg/gardens/wpa/witt_winter.shtml</item>
+        <item>http://depts.washington.edu/uwbg/gardens/wpa/shoreline.shtml</item>
+        <item>http://www.seattle.gov/parks/parkspaces/japanesegarden.htm</item>
+    </string-array>
+</resources>

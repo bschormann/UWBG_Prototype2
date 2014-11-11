@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".UWArboretumActivity"
+    >
+
+<com.esri.android.map.MapView
+android:id="@+id/map"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+initExtent="1277698.7250303626 231387.09607818723 1282477.4996485263 244562.67943646014"
+android:background="@android:color/darker_gray"
+/>
+<!-- initExtent = "1279108.190939039, 231920.20797632635, 1280635.8646959215, 237807.50744993985" -->
+ 
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/background"
+    tools:context="jbs.bg.washingtonparkarboretumoriginal.MapActivity$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/interactive_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/map_layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/okay_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/mediumbutton_layout_marginBottom"
+            android:layout_marginEnd="@dimen/mediumbutton_layout_marginEnd"
+            android:layout_marginRight="@dimen/mediumbutton_layout_marginRight"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:contentDescription="@string/okay_button"
+            android:drawableTop="@drawable/large_thumbs_up"
+            android:text="@string/okay" />
+
+        <Button
+            android:id="@+id/cancel_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/mediumbutton_layout_marginBottom"
+            android:layout_marginEnd="@dimen/mediumbutton_layout_marginEnd"
+            android:layout_marginRight="@dimen/mediumbutton_layout_marginRight"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:contentDescription="@string/cancel_button"
+            android:drawableTop="@drawable/large_thumbs_down"
+            android:text="@string/cancel" />
+    </LinearLayout>
+    
+</LinearLayout>

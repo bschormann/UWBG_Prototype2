@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+	android:orientation="vertical"
+    android:background="@color/background"
+    tools:context="edu.uw.BG.BackDoorHelperActivity" >
+
+            <CheckBox
+                android:id="@+id/map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+				android:textColor="@color/black" 
+                android:text="Use production Map"  />                
+             
+            <CheckBox
+                android:id="@+id/help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:textColor="@color/black" 
+                android:text="Use production Help"
+                android:checked="false" />
+             
+            <CheckBox
+                android:id="@+id/visitor_information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:checked="false"
+				android:textColor="@color/black" 
+                android:text="Use production Visitor Information" />
+             
+            <CheckBox
+                android:id="@+id/arboretum_events"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:checked="false"
+				android:textColor="@color/black" 
+                android:text="Use production Arboretum Events" />
+             
+            <CheckBox
+                android:id="@+id/featured_gardens"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:checked="false"
+				android:textColor="@color/black" 
+                android:text="Use production Feature Gardens" />
+             
+            <CheckBox
+                android:id="@+id/plant_lookup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:checked="false"
+				android:textColor="@color/black" 
+                android:text="Use production Plant Lookup" />
+             
+            <CheckBox
+                android:id="@+id/bookmarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:checked="false"
+				android:textColor="@color/black" 
+                android:text="Use production Bookmarks" />
+             
+            <CheckBox
+                android:id="@+id/trails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:checked="false"
+				android:textColor="@color/black" 
+                android:text="Use production Trails" />
+             
+            <CheckBox
+                android:id="@+id/park_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:checked="false"
+				android:textColor="@color/black" 
+                android:text="Use production Park History" />
+             
+            <Button
+                android:id="@+id/Save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:textColor="@color/black" 
+                android:text="Save" />
+</LinearLayout>
