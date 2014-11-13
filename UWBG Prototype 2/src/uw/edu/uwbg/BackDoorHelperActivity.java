@@ -36,13 +36,16 @@ import android.widget.Toast;
  * 
  * @author Brett Schormann
  * @version 0.1 10/24/2014
+ * 			0.2 11/12/2014
+ * 			Changed so that Capstone project format is used. (BS)
  * @since 0.2
  */
 public class BackDoorHelperActivity extends Activity {
 	// TODO Use array adapter
 	private String TAG = BackDoorHelperActivity.this.getClass().getSimpleName();
 
-	private CheckBox map, help, visitorInformation, featuredGardens, arboretumEvents, trails, plantLookup, bookmarks, parkHistory;
+	private CheckBox map, help, visitorInformation, featuredGardens, arboretumEvents, trails, plantLookup, 
+					 bookmarks, parkHistory, capstoneProject;
     private Button saveButton;
 
 	@Override
@@ -61,6 +64,7 @@ public class BackDoorHelperActivity extends Activity {
         plantLookup			= (CheckBox) findViewById(R.id.plant_lookup);
         bookmarks			= (CheckBox) findViewById(R.id.bookmarks);
         parkHistory			= (CheckBox) findViewById(R.id.park_history);
+        capstoneProject		= (CheckBox) findViewById(R.id.use_capstone_format);
         
 		// get date from BackDoorHelper singleton
 		final BackDoorHelper backDoorHelper = BackDoorHelper.getBackDoorHelper();
@@ -75,6 +79,7 @@ public class BackDoorHelperActivity extends Activity {
 		plantLookup.setChecked(backDoorHelper.isUseProductionPlantLookup());
 		bookmarks.setChecked(backDoorHelper.isUseProductionBookmarks());
 		parkHistory.setChecked(backDoorHelper.isUseProductionParkHistory());
+		capstoneProject.setChecked(backDoorHelper.isUseCapstoneProject());
 
         saveButton = (Button) findViewById(R.id.Save);;
         saveButton.setOnClickListener(new View.OnClickListener() {
@@ -89,6 +94,7 @@ public class BackDoorHelperActivity extends Activity {
                 backDoorHelper.setUseProductionPlantLookup(plantLookup.isChecked());
                 backDoorHelper.setUseProductionBookmarks(bookmarks.isChecked());
                 backDoorHelper.setUseProductionParkHistory(parkHistory.isChecked());
+                backDoorHelper.setUseCapstoneProject(capstoneProject.isChecked());
                 
                 Context context = getApplicationContext();
                 CharSequence text = "BackDoor data saved!";

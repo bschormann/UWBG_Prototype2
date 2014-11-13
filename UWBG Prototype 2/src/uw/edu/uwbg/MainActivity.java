@@ -58,6 +58,8 @@ import android.widget.Toast;
  * 			Changes to support integration of DownloadPDFTask (BS)
  * 			0.5 10/31/2014
  * 			Changes to support integration of FeaturedGardens (BS)
+ * 			0.6 11/12/2014
+ * 			Changed so that Capstone project format is used. (BS)
  * @since 	0.1
  */
 public class MainActivity extends Activity {
@@ -84,15 +86,16 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         
-        setContentView(R.layout.activity_main);
+    	BackDoorHelper bdh = BackDoorHelper.getBackDoorHelper();
+    	if (bdh.isUseCapstoneProject()) {
+    		setContentView(R.layout.activity_main_capstone);
+    	} else {
+    		setContentView(R.layout.activity_main);
+    	}
         
         context = this;
-         
-        setupButtons();
-        adjustTextOnHomeScreen();
-        setupButtonListeners();
-        
- 		plantlookupfrag=new PlantLookUpFragment(findViewById(android.R.id.content));
+
+        plantlookupfrag=new PlantLookUpFragment(findViewById(android.R.id.content));
  		bookmarkfrag=new BookMarkListFragment(); 
     }	
 	
@@ -103,6 +106,16 @@ public class MainActivity extends Activity {
     protected void onResume() {
     	super.onResume();
  		//adjustText(plantlookupfrag);
+    	BackDoorHelper bdh = BackDoorHelper.getBackDoorHelper();
+    	if (bdh.isUseCapstoneProject()) {
+    		setContentView(R.layout.activity_main_capstone);
+    	} else {
+    		setContentView(R.layout.activity_main);
+    	}
+        setupButtons();
+        adjustTextOnHomeScreen();
+        setupButtonListeners();       
+        
     	animate((ImageView)findViewById(R.id.HomepageImageView), mImages, 0, true);
     }
     
