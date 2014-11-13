@@ -82,6 +82,14 @@
 				android:textColor="@color/black" 
                 android:text="Use production Park History" />
              
+            <CheckBox
+                android:id="@+id/use_capstone_format"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:checked="false"
+				android:textColor="@color/black" 
+                android:text="Use Capstone Project format" />
+             
             <Button
                 android:id="@+id/Save"
                 android:layout_width="wrap_content"

@@ -1,8 +1,8 @@
 <resources>
 
     <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_horizontal_margin">5dp</dimen>
-    <dimen name="activity_vertical_margin">5dp</dimen>
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">0dp</dimen>
     
     <!-- Button settings -->
     <dimen name="button_radius">15dp</dimen>
@@ -26,7 +26,13 @@
     <dimen name="smallbutton_adusted_layout_marginRight">10dp</dimen>
     <dimen name="smallbutton_layout_marginTop">5dp</dimen>
     
-     
+    <dimen name="smallrectbutton_layout_marginBottom">0dp</dimen>
+    <dimen name="smallrectbutton_layout_marginEnd">1dp</dimen>
+    <dimen name="smallrectbutton_layout_marginRight">1dp</dimen>
+    <dimen name="smallrectbutton_adusted_layout_marginRight">1dp</dimen>
+    <dimen name="smallrectbutton_layout_marginTop">5dp</dimen>
+    
+    
     
     <!-- Image View settings -->
     <dimen name="imageview_layout_marginBottom">10dp</dimen>
