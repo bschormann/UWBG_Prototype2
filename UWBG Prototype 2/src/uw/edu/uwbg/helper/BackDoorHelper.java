@@ -8,6 +8,8 @@ package uw.edu.uwbg.helper;
  * @version 0.1 10/2014
  * 			0.2 10/30/2014
  * 			Changed so that production Trails code is executed. (BS)
+ * 			0.3 11/12/2014
+ * 			Changed so that Capstone project format is used. (BS)
  * @since 0.2
  */
 public class BackDoorHelper {
@@ -21,8 +23,9 @@ public class BackDoorHelper {
 	private boolean useProductionFeaturedGardens = true;
 	private boolean useProductionBookmarks = true;
 	private boolean useProductionParkHistory = true;
-	private boolean useProductionArboretumEvents = false;
+	private boolean useProductionArboretumEvents = true;
 	private boolean useProductionPlantLookup = true;
+	private boolean useCapstoneProject = true;
 
 	public boolean isUseProductionPlantLookup() {
 		return useProductionPlantLookup;
@@ -46,6 +49,14 @@ public class BackDoorHelper {
 
 	public void setUseProductionFeaturedGardens(boolean useProductionFeaturedGardens) {
 		this.useProductionFeaturedGardens = useProductionFeaturedGardens;
+	}
+
+	public boolean isUseCapstoneProject() {
+		return useCapstoneProject;
+	}
+
+	public void setUseCapstoneProject(boolean useCapstoneProject) {
+		this.useCapstoneProject = useCapstoneProject;
 	}
 
 	public boolean isUseProductionBookmarks() {

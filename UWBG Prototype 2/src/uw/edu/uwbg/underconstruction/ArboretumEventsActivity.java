@@ -22,6 +22,7 @@ THE SOFTWARE.
 */
 
 import uw.edu.uwbg.R;
+import uw.edu.uwbg.helper.BackDoorHelper;
 import uw.edu.uwbg.model.CustomListArboretumEvents;
 import android.app.Activity;
 import android.os.Bundle;
@@ -80,7 +81,12 @@ public class ArboretumEventsActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_arboretum_events);
+    	BackDoorHelper bdh = BackDoorHelper.getBackDoorHelper();
+    	if (bdh.isUseCapstoneProject()) {
+    		setContentView(R.layout.activity_arboretum_events_capstone);
+    	} else {
+    		setContentView(R.layout.activity_arboretum_events);
+    	}
 		
 		CustomListArboretumEvents adapter = new
 				CustomListArboretumEvents(ArboretumEventsActivity.this, leftIconId, text, rightIconId);
