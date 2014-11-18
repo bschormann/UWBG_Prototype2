@@ -4,28 +4,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@color/background"
 	tools:context="${relativePackage}.${activityClass}"  >
 
     <LinearLayout
         android:id="@+id/LinearLayout1"
         android:orientation="horizontal"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" >
         <Button
             android:id="@+id/about"
 			android:contentDescription="@string/about_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/smallrectbutton_layout_marginEnd"
+            android:layout_marginRight="@dimen/smallrectbutton_adusted_layout_marginRight"
+            android:background="@drawable/button_background_rect"
             android:layout_weight="1"
-            android:layout_marginEnd="@dimen/smallbutton_layout_marginEnd"
-            android:layout_marginRight="@dimen/smallbutton_layout_marginRight"
-            android:layout_marginBottom="@dimen/smallbutton_layout_marginBottom"
-            android:background="@drawable/button_background"
             android:drawableTop="@drawable/info"
             android:text="@string/about"
             style="?android:attr/borderlessButtonStyle" />
@@ -34,11 +29,10 @@
 			android:contentDescription="@string/www_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/smallrectbutton_layout_marginEnd"
+            android:layout_marginRight="@dimen/smallrectbutton_adusted_layout_marginRight"
+            android:background="@drawable/button_background_rect"
             android:layout_weight="1"
-            android:layout_marginEnd="@dimen/smallbutton_layout_marginEnd"
-            android:layout_marginRight="@dimen/smallbutton_layout_marginRight"
-            android:layout_marginBottom="@dimen/smallbutton_layout_marginBottom"
-            android:background="@drawable/button_background"
             android:drawableTop="@drawable/antenna_xl"
             android:text="@string/www"
             style="?android:attr/borderlessButtonStyle" />
@@ -47,24 +41,22 @@
 			android:contentDescription="@string/help_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/smallrectbutton_layout_marginEnd"
+            android:layout_marginRight="@dimen/smallrectbutton_adusted_layout_marginRight"
+            android:background="@drawable/button_background_rect"
             android:layout_weight="1"
-            android:layout_marginEnd="@dimen/smallbutton_layout_marginEnd"
-            android:layout_marginRight="@dimen/smallbutton_layout_marginRight"
-            android:layout_marginBottom="@dimen/smallbutton_layout_marginBottom"
-            android:background="@drawable/button_background"
             android:drawableTop="@drawable/question_mark_2_xl"
             android:text="@string/help"
             style="?android:attr/borderlessButtonStyle" />
         <Button
             android:id="@+id/provide_feedback"
 			android:contentDescription="@string/provide_feedback_button"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/smallrectbutton_layout_marginEnd"
+            android:layout_marginRight="@dimen/smallrectbutton_adusted_layout_marginRight"
+            android:background="@drawable/button_background_rect"
             android:layout_weight="1"
-            android:layout_marginEnd="@dimen/smallbutton_layout_marginEnd"
-            android:layout_marginRight="@dimen/smallbutton_adusted_layout_marginRight"
-            android:layout_marginBottom="@dimen/smallbutton_layout_marginBottom"
-            android:background="@drawable/button_background"
             android:drawableTop="@drawable/feedback"
             android:text="@string/provide_feedback"
             style="?android:attr/borderlessButtonStyle" />    
@@ -95,7 +87,7 @@
     <LinearLayout
         android:id="@+id/LinearLayout2"
         android:orientation="horizontal"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" >
         <Button
             android:id="@+id/featured_gardens"
@@ -112,7 +104,7 @@
         <Button
             android:id="@+id/visitor_information"
 			android:contentDescription="@string/visitor_information_button"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginEnd="@dimen/largebutton_layout_marginEnd"
@@ -126,12 +118,12 @@
     <LinearLayout
         android:id="@+id/LinearLayout3"
         android:orientation="horizontal"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" >
         <Button
             android:id="@+id/arboretum_events"
 			android:contentDescription="@string/arboretum_events_button"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginEnd="@dimen/largebutton_layout_marginEnd"
@@ -144,7 +136,7 @@
         <Button
             android:id="@+id/park_history"
 			android:contentDescription="@string/park_history_button"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginEnd="@dimen/largebutton_layout_marginEnd"
@@ -161,17 +153,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal" >
-
         <Button
             android:id="@+id/trails"
             style="?android:attr/borderlessButtonStyle"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/smallbutton_layout_marginEnd"
-            android:layout_marginRight="@dimen/smallbutton_layout_marginRight"
-            android:layout_marginTop="@dimen/smallbutton_layout_marginTop"
+            android:layout_marginEnd="@dimen/smallrectbutton_layout_marginEnd"
+            android:layout_marginRight="@dimen/smallrectbutton_adusted_layout_marginRight"
+            android:layout_marginTop="@dimen/smallrectbutton_layout_marginTop"
+            android:background="@drawable/button_background_rect"
             android:layout_weight="1"
-            android:background="@drawable/button_background"
             android:contentDescription="@string/trails_button"
             android:drawableTop="@drawable/trails"
             android:text="@string/trails" />
@@ -179,13 +170,13 @@
         <Button
             android:id="@+id/plant_lookup"
             style="?android:attr/borderlessButtonStyle"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/smallbutton_layout_marginEnd"
-            android:layout_marginRight="@dimen/smallbutton_layout_marginRight"
-            android:layout_marginTop="@dimen/smallbutton_layout_marginTop"
+            android:layout_marginEnd="@dimen/smallrectbutton_layout_marginEnd"
+            android:layout_marginRight="@dimen/smallrectbutton_adusted_layout_marginRight"
+            android:layout_marginTop="@dimen/smallrectbutton_layout_marginTop"
+            android:background="@drawable/button_background_rect"
             android:layout_weight="1"
-            android:background="@drawable/button_background"
             android:contentDescription="@string/plant_lookup_button"
             android:drawableTop="@drawable/plantlookup"
             android:text="@string/plant_lookup" />
@@ -193,13 +184,13 @@
         <Button
             android:id="@+id/map"
             style="?android:attr/borderlessButtonStyle"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/smallbutton_layout_marginEnd"
-            android:layout_marginRight="@dimen/smallbutton_layout_marginRight"
-            android:layout_marginTop="@dimen/smallbutton_layout_marginTop"
+            android:layout_marginEnd="@dimen/smallrectbutton_layout_marginEnd"
+            android:layout_marginRight="@dimen/smallrectbutton_adusted_layout_marginRight"
+            android:layout_marginTop="@dimen/smallrectbutton_layout_marginTop"
+            android:background="@drawable/button_background_rect"
             android:layout_weight="1"
-            android:background="@drawable/button_background"
             android:contentDescription="@string/map_button"
             android:drawableTop="@drawable/greenmap"
             android:text="@string/map" />
@@ -207,16 +198,15 @@
         <Button
             android:id="@+id/bookmarks"
             style="?android:attr/borderlessButtonStyle"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/smallbutton_layout_marginEnd"
-            android:layout_marginRight="@dimen/smallbutton_adusted_layout_marginRight"
-            android:layout_marginTop="@dimen/smallbutton_layout_marginTop"
+            android:layout_marginEnd="@dimen/smallrectbutton_layout_marginEnd"
+            android:layout_marginRight="@dimen/smallrectbutton_adusted_layout_marginRight"
+            android:layout_marginTop="@dimen/smallrectbutton_layout_marginTop"
+            android:background="@drawable/button_background_rect"
             android:layout_weight="1"
-            android:background="@drawable/button_background"
             android:contentDescription="@string/bookmarks_button"
             android:drawableTop="@drawable/greenbookmarks"
             android:text="@string/bookmarks" />
     </LinearLayout>
-
 </LinearLayout>

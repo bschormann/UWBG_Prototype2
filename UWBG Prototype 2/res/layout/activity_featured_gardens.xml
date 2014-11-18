@@ -1,4 +1,4 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/RelativeLayout1"
     android:layout_width="match_parent"
@@ -14,5 +14,68 @@
         android:layout_margin="4dp"
         android:numColumns="auto_fit" >
     </GridView>
+    
+    <LinearLayout
+        android:id="@+id/LinearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/trails"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/smallrectbutton_layout_marginEnd"
+            android:layout_marginRight="@dimen/smallrectbutton_adusted_layout_marginRight"
+            android:layout_marginTop="@dimen/smallrectbutton_layout_marginTop"
+            android:background="@drawable/button_background_rect"
+            android:layout_weight="1"
+            android:contentDescription="@string/trails_button"
+            android:drawableTop="@drawable/trails"
+            android:text="@string/trails" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/plant_lookup"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/smallrectbutton_layout_marginEnd"
+            android:layout_marginRight="@dimen/smallrectbutton_adusted_layout_marginRight"
+            android:layout_marginTop="@dimen/smallrectbutton_layout_marginTop"
+            android:background="@drawable/button_background_rect"
+            android:layout_weight="1"
+            android:contentDescription="@string/plant_lookup_button"
+            android:drawableTop="@drawable/plantlookup"
+            android:text="@string/plant_lookup" />
+
+        <Button
+            android:id="@+id/map"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/smallrectbutton_layout_marginEnd"
+            android:layout_marginRight="@dimen/smallrectbutton_adusted_layout_marginRight"
+            android:layout_marginTop="@dimen/smallrectbutton_layout_marginTop"
+            android:background="@drawable/button_background_rect"
+            android:layout_weight="1"
+            android:contentDescription="@string/map_button"
+            android:drawableTop="@drawable/greenmap"
+            android:text="@string/map" />
+
+        <Button
+            android:id="@+id/bookmarks"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/smallrectbutton_layout_marginEnd"
+            android:layout_marginRight="@dimen/smallrectbutton_adusted_layout_marginRight"
+            android:layout_marginTop="@dimen/smallrectbutton_layout_marginTop"
+            android:background="@drawable/button_background_rect"
+            android:layout_weight="1"
+            android:contentDescription="@string/bookmarks_button"
+            android:drawableTop="@drawable/greenbookmarks"
+            android:text="@string/bookmarks" />   
+    </LinearLayout>    
+    
+</RelativeLayout>

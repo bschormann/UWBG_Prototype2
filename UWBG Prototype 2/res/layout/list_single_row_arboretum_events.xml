@@ -10,7 +10,15 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@drawable/button_background_rect" >
     
-    <TextView
+    <ImageView
+        android:id="@+id/lefticonimg"
+		android:contentDescription="@string/arboretum_events_image_view"
+		android:layout_marginLeft="10dp"
+		android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"   />
+
+   <TextView
         android:id="@+id/txt"
 		android:layout_gravity="center"
         android:layout_width="0dp"

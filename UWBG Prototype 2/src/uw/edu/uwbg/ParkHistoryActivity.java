@@ -24,6 +24,7 @@ THE SOFTWARE.
 import uw.edu.uwbg.helper.CustomFont;
 import android.app.Activity;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 
 /**
@@ -33,6 +34,8 @@ import android.widget.TextView;
  * @version 0.2 10/27/2014
  * 			0.3 10/31/2014
  * 			Used CustomFont to set up text. (BS)
+ * 			0.4 11/18/2014
+ * 			Changes to use linear layout at bottom of screen (BS)
  * @since 0.1
  */
 public class ParkHistoryActivity extends Activity {	
@@ -66,6 +69,15 @@ public class ParkHistoryActivity extends Activity {
         TextView htmlTextView = (TextView)findViewById(R.id.park_history);
 		
         CustomFont customFont = CustomFont.getCustomFont();
-		customFont.setTextViewParameters(this, htmlTextView, "OpenSans-Regular", "MEDIUM_TEXT_SIZE", htmlText, true);		
+		customFont.setTextViewParameters(this, htmlTextView, "OpenSans-Regular", "MEDIUM_TEXT_SIZE", htmlText, true);	
+		
+    	Button btn = (Button) this.findViewById(R.id.trails);
+    	customFont.setButtonParameters(this, btn, "OpenSans-ExtraBoldItalic", "MEDIUM_TEXT_SIZE"); 
+    	btn = (Button) this.findViewById(R.id.plant_lookup);
+    	customFont.setButtonParameters(this, btn, "OpenSans-ExtraBoldItalic", "MEDIUM_TEXT_SIZE"); 
+       	btn = (Button) this.findViewById(R.id.map);
+    	customFont.setButtonParameters(this, btn, "OpenSans-ExtraBoldItalic", "MEDIUM_TEXT_SIZE"); 
+    	btn = (Button) this.findViewById(R.id.bookmarks);
+    	customFont.setButtonParameters(this, btn, "OpenSans-ExtraBoldItalic", "MEDIUM_TEXT_SIZE"); 
 	}
 }

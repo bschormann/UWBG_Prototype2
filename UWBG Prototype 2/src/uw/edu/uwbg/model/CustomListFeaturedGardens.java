@@ -28,6 +28,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -35,6 +36,8 @@ import android.widget.TextView;
  * Used to create ListView for FeaturedGardens
  * @author 	Brett Schormann
  * @version 0.1 10/31/2014
+ * 			0.2 11/18/2014
+ * 			Changes to use linear layout at bottom of screen (BS)
  */
 public class CustomListFeaturedGardens  extends ArrayAdapter<String> {
 	private final Activity context;
@@ -74,6 +77,15 @@ public class CustomListFeaturedGardens  extends ArrayAdapter<String> {
 		ImageView imageView = (ImageView) rowView.findViewById(R.id.imageView1);
 		imageView.setImageResource(drawable[position]);
 		
+    	Button btn = (Button) context.findViewById(R.id.trails);
+    	customFont.setButtonParameters(context, btn, "OpenSans-ExtraBoldItalic", "MEDIUM_TEXT_SIZE"); 
+    	btn = (Button) context.findViewById(R.id.plant_lookup);
+    	customFont.setButtonParameters(context, btn, "OpenSans-ExtraBoldItalic", "MEDIUM_TEXT_SIZE"); 
+       	btn = (Button) context.findViewById(R.id.map);
+    	customFont.setButtonParameters(context, btn, "OpenSans-ExtraBoldItalic", "MEDIUM_TEXT_SIZE"); 
+    	btn = (Button) context.findViewById(R.id.bookmarks);
+    	customFont.setButtonParameters(context, btn, "OpenSans-ExtraBoldItalic", "MEDIUM_TEXT_SIZE"); 
+
 		return rowView;
 	}	
 }

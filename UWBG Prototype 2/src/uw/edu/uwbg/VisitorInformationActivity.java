@@ -44,40 +44,54 @@ import android.widget.Toast;
 	
 	 ListView list;
 	 // TODO Decide whether to delete this array or keep it.
-	 Integer[] leftIconId = {
-			 R.drawable.hours,
-			 R.drawable.phone_booth,
-			 R.drawable.directions,
-			 R.drawable.parking_large,
-			 R.drawable.restroom_large,
-			 R.drawable.books			 
-	 };
-
-	 String[] text = {
-			 "The Washington Park Arboretum is free and open to the public daily from dawn to dusk.\n\n" +
-					 "The Graham Visitor Center and public restrooms are open 9am - 5pm.\n\n" +
-					 "For more detailed information select the icon.",
-			 "(206) 543-8800\n\n" +
-					 "To call select the icon.",
-			 "Graham Visitor Center\n" +
-					 "\t2300 Arboretum Drive E\n" +
-					 "\tSeattle WA 98112\n\n" +
-					 "For directions select the icon.",
-			 "Find Parking - select the icon",
-			 "Park Restrooms - select the icon",
-			 "Center for Urban Horticulture\n" +
-					 "\t3501 NE 41st St\n" +
-					 "\tSeattle, 98105\n\n" +
-					 "For more detailed information select the icon.",
-	 } ;
+//	 Integer[] leftIconId = {
+//			 R.drawable.hours,
+//			 R.drawable.phone_booth,
+//			 R.drawable.directions,
+//			 R.drawable.parking_large,
+//			 R.drawable.restroom_large,
+//			 R.drawable.books			 
+//	 };
 	 
-	 Integer[] rightIconId = {
+	 Integer[] leftIconId = {
 			 R.drawable.hours,
 			 R.drawable.call,
 			 R.drawable.compass_colored,
 			 R.drawable.parking_large,
 			 R.drawable.restroom_large,
 			 R.drawable.books
+	 };
+
+	 String[] text = {
+			 "\nThe Washington Park Arboretum is free and open to the public daily from dawn to dusk.\n\n" +
+					 "The Graham Visitor Center and public restrooms are open 9am - 5pm.\n",
+			 "\n(206) 543-8800\n",
+			 "\nGraham Visitor Center\n" +
+					 "\t2300 Arboretum Drive E\n" +
+					 "\tSeattle WA 98112\n",
+			 "Find Parking",
+			 "Park Restrooms",
+			 "\nCenter for Urban Horticulture\n" +
+					 "\t3501 NE 41st St\n" +
+					 "\tSeattle, 98105\n",
+	 } ;
+	 
+//	 Integer[] rightIconId = {
+//			 R.drawable.hours,
+//			 R.drawable.call,
+//			 R.drawable.compass_colored,
+//			 R.drawable.parking_large,
+//			 R.drawable.restroom_large,
+//			 R.drawable.books
+//	  };
+
+	 Integer[] rightIconId = {
+			 R.drawable.greater_than_symbol,
+			 R.drawable.greater_than_symbol,
+			 R.drawable.greater_than_symbol,
+			 R.drawable.greater_than_symbol,
+			 R.drawable.greater_than_symbol,
+			 R.drawable.greater_than_symbol
 	  };
 
 	@Override

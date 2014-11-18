@@ -68,8 +68,8 @@ public class MainActivity extends Activity {
 	
 	private final String[] mImages = {	
 			"arboretum15",			"hydrangea_macrophylla_jeter",	"srija_chattapadyay2", 
-			"kidsfishing",			"amaryllis",					"arboretum15",
-			"sorbus",				"autumngrape_howard",			"maplemalk_jeter",
+			"kidsfishing",			"arboretum15",
+			"autumngrape_howard",	"maplemalk_jeter",
 			"pacconshelter_wott", 	"sorbus_commixta_embley_jeter",	"ubna_crabapple_howard"};
 
 	private final String WELCOME = "Welcome to the ...";
@@ -198,15 +198,18 @@ public class MainActivity extends Activity {
      */
     private void setupButtons() {
     	CustomFont customFont = CustomFont.getCustomFont();
-    	
-    	Button btn = (Button) findViewById(R.id.about);
-    	customFont.setButtonParameters(this, btn, "OpenSans-BoldItalic", "MEDIUM_TEXT_SIZE"); 
-    	btn = (Button) findViewById(R.id.www);
-    	customFont.setButtonParameters(this, btn, "OpenSans-BoldItalic", "MEDIUM_TEXT_SIZE"); 
-    	btn = (Button) findViewById(R.id.help);
-    	customFont.setButtonParameters(this, btn, "OpenSans-BoldItalic", "MEDIUM_TEXT_SIZE"); 
-    	btn = (Button) findViewById(R.id.provide_feedback);
-    	customFont.setButtonParameters(this, btn, "OpenSans-BoldItalic", "MEDIUM_TEXT_SIZE"); 
+    	Button btn = null;
+    	BackDoorHelper bdh = BackDoorHelper.getBackDoorHelper();
+    	if (!bdh.isUseCapstoneProject()) {
+    		btn = (Button) findViewById(R.id.about);
+	    	customFont.setButtonParameters(this, btn, "OpenSans-BoldItalic", "MEDIUM_TEXT_SIZE"); 
+	    	btn = (Button) findViewById(R.id.www);
+	    	customFont.setButtonParameters(this, btn, "OpenSans-BoldItalic", "MEDIUM_TEXT_SIZE"); 
+	    	btn = (Button) findViewById(R.id.help);
+	    	customFont.setButtonParameters(this, btn, "OpenSans-BoldItalic", "MEDIUM_TEXT_SIZE"); 
+	    	btn = (Button) findViewById(R.id.provide_feedback);
+	    	customFont.setButtonParameters(this, btn, "OpenSans-BoldItalic", "MEDIUM_TEXT_SIZE"); 
+    	}
     	btn = (Button) findViewById(R.id.featured_gardens);
     	customFont.setButtonParameters(this, btn, "OpenSans-ExtraBoldItalic", "LARGE_TEXT_SIZE"); 
     	btn = (Button) findViewById(R.id.visitor_information);
@@ -229,20 +232,26 @@ public class MainActivity extends Activity {
      * Adjusts the font and alignment on the home screen text fields
      * That is: Welcome to the ... Washington Park Arboretum
      *     
-     * @author Brett Schormann
+     * @author 	Brett Schormann
      * @version 0.1 10/2014
-     * @since 0.1
+     * 			0.2 11/13/2014 Changed to inclue Capstone project format. (BS)
+     * 			0.3 11/16/2014 Changed font to OpenSans-BoldItalic from OpenSans-LightItalic
+     * @since 	0.1
      */
     private void adjustTextOnHomeScreen() {
     	
     	CustomFont customFont = CustomFont.getCustomFont();
     	
-    	TextView  tv = (TextView) findViewById(R.id.text_welcome);
-    	customFont.setTextViewParameters(this, tv, "OpenSans-LightItalic", "GIGANTIC_TEXT_SIZE", WELCOME, false);
+    	// Welcome text not in Capstone project
+    	BackDoorHelper bdh = BackDoorHelper.getBackDoorHelper();
+    	if (!bdh.isUseCapstoneProject()) {
+    		TextView  tv = (TextView) findViewById(R.id.text_welcome);
+    		customFont.setTextViewParameters(this, tv, "OpenSans-BoldItalic", "GIGANTIC_TEXT_SIZE", WELCOME, false);
     	
-    	tv = (TextView) findViewById(R.id.text_tothe);
-    	customFont.setTextViewParameters(this, tv, "OpenSans-LightItalic", "GIGANTIC_TEXT_SIZE", WPA, false);
-    	tv.setGravity(Gravity.RIGHT);
+    		tv = (TextView) findViewById(R.id.text_tothe);
+    		customFont.setTextViewParameters(this, tv, "OpenSans-BoldItalic", "GIGANTIC_TEXT_SIZE", WPA, false);
+    		tv.setGravity(Gravity.RIGHT);
+    	}
     }
 
     /**
@@ -253,64 +262,61 @@ public class MainActivity extends Activity {
      * 			Completed adding listeners to buttons.
      * 			0.3 10/30/2014
      * 			Added code to use DownloadPDFTask (BS)
+     * 			0.4 11/16/2014
+     * 			Changed backdoor from About to Visitor Information
      * @since 	0.1
      */
     private void setupButtonListeners() {
-    	
-        // About
-    	Button button = (Button) findViewById(R.id.about);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-            	Intent intent = new Intent(MainActivity.this, AboutActivity.class);
-                startActivity(intent);
-            }
-        });
-        
-        button.setOnLongClickListener(new View.OnLongClickListener() { 
-            public boolean onLongClick(View v) {
-            	Intent intent = new Intent(MainActivity.this, BackDoorHelperActivity.class);
-                startActivity(intent);                
-                return true;
-            }
-        });
+    	Button button = null;
+    	BackDoorHelper bdh = BackDoorHelper.getBackDoorHelper();
+    	if (!bdh.isUseCapstoneProject()) {
+	        // About
+	    	button = (Button) findViewById(R.id.about);
+	        button.setOnClickListener(new View.OnClickListener() {
+	            public void onClick(View v) {
+	            	Intent intent = new Intent(MainActivity.this, AboutActivity.class);
+	                startActivity(intent);
+	            }
+	        });
+	        
+	        // Website
+	        button = (Button) findViewById(R.id.www);
+	        button.setOnClickListener(new View.OnClickListener() {
+	            public void onClick(View v) {
+	            	// this activity will be used by other activities
+	            	String urlString = "http://depts.washington.edu/uwbg/index.php";
+	            	SharedPreferences sharedPreferences = getSharedPreferences("data", Context.MODE_PRIVATE);
+	            	SharedPreferences.Editor editor = sharedPreferences.edit();
+	            	editor.putString("url", urlString);
+	            	editor.commit();
+	            	Intent intent = new Intent(MainActivity.this, WebsiteActivity.class);
+	                startActivity(intent);                
+	            }
+	        });
+	
+	        // Help
+	        button = (Button) findViewById(R.id.help);
+	        button.setOnClickListener(new View.OnClickListener() {
+	            public void onClick(View v) {
+	            	BackDoorHelper bdh = BackDoorHelper.getBackDoorHelper();
+	            	if (bdh.isUseProductionHelp()) {
+		            	Intent intent = new Intent(MainActivity.this, HelpActivity.class);
+		                startActivity(intent); 
+	            	} else {
+		            	Intent intent = new Intent(MainActivity.this, HelpActivity.class);
+		                startActivity(intent); 
+	            	}
+	            }
+	        });
 
-        // Website
-        button = (Button) findViewById(R.id.www);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-            	// this activity will be used by other activities
-            	String urlString = "http://depts.washington.edu/uwbg/index.php";
-            	SharedPreferences sharedPreferences = getSharedPreferences("data", Context.MODE_PRIVATE);
-            	SharedPreferences.Editor editor = sharedPreferences.edit();
-            	editor.putString("url", urlString);
-            	editor.commit();
-            	Intent intent = new Intent(MainActivity.this, WebsiteActivity.class);
-                startActivity(intent);                
-            }
-        });
-
-        // Help
-        button = (Button) findViewById(R.id.help);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-            	BackDoorHelper bdh = BackDoorHelper.getBackDoorHelper();
-            	if (bdh.isUseProductionHelp()) {
-	            	Intent intent = new Intent(MainActivity.this, HelpActivity.class);
-	                startActivity(intent); 
-            	} else {
-	            	Intent intent = new Intent(MainActivity.this, HelpActivity.class);
-	                startActivity(intent); 
-            	}
-            }
-        });
-
-        // Feedback
-        button = (Button) findViewById(R.id.provide_feedback);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                sendEmail();
-            }
-        });
+	        // Feedback
+	        button = (Button) findViewById(R.id.provide_feedback);
+	        button.setOnClickListener(new View.OnClickListener() {
+	            public void onClick(View v) {
+	                sendEmail();
+	            }
+	        });
+    	}
 
         // Featured Gardens
         button = (Button) findViewById(R.id.featured_gardens);
@@ -351,8 +357,16 @@ public class MainActivity extends Activity {
             	}
             }
         });
+ 
+        button.setOnLongClickListener(new View.OnLongClickListener() { 
+            public boolean onLongClick(View v) {
+            	Intent intent = new Intent(MainActivity.this, BackDoorHelperActivity.class);
+                startActivity(intent);                
+                return true;
+            }
+        });
 
-        // Arboretum Events
+       // Arboretum Events
         button = (Button) findViewById(R.id.arboretum_events);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

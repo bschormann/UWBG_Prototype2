@@ -36,46 +36,61 @@ import android.widget.Toast;
  * Should follow same pattern as in VisitorInformation activity
  * @author Brett Schormann
  * @version 0.2 10/27/2014
+ * 			0.3 11/13/2014 Integrated Capstone project format. (BS)
  * @since 0.1
  */
 public class ArboretumEventsActivity extends Activity {
 	
 	 ListView list;
 	 
-	 Integer[] leftIconId = {
-			 R.drawable.hours,
-			 R.drawable.phone_booth,
-			 R.drawable.directions,
-			 R.drawable.parking_large,
-			 R.drawable.restroom_large,
-			 R.drawable.books			 
-	 };
+//	 Integer[] leftIconId = {
+//			 R.drawable.hours,
+//			 R.drawable.phone_booth,
+//			 R.drawable.directions,
+//			 R.drawable.parking_large,
+//			 R.drawable.restroom_large,
+//			 R.drawable.books			 
+//	 };
 
-	 String[] text = {
-			 "The Washington Park Arboretum is free and open to the public daily from dawn to dusk.\n\n" +
-					 "The Graham Visitor Center and public restrooms are open 9am - 5pm.\n\n" +
-					 "For more detailed information select the icon.",
-			 "(206) 543-8800\n\n" +
-					 "To call select the icon.",
-			 "Graham Visitor Center\n" +
-					 "\t2300 Arboretum Drive E\n" +
-					 "\tSeattle WA 98112\n\n" +
-					 "For directions select the icon.",
-			 "Find Parking - select the icon",
-			 "Park Restrooms - select the icon",
-			 "Center for Urban Horticulture\n" +
-					 "\t3501 NE 41st St\n" +
-					 "\tSeattle, 98105\n\n" +
-					 "For more detailed information select the icon.",
-	 } ;
-	 
-	 Integer[] rightIconId = {
+	 Integer[] leftIconId = {
 			 R.drawable.hours,
 			 R.drawable.call,
 			 R.drawable.compass_colored,
 			 R.drawable.parking_large,
 			 R.drawable.restroom_large,
 			 R.drawable.books
+	  };
+	 
+	 String[] text = {
+			 "\nThe Washington Park Arboretum is free and open to the public daily from dawn to dusk.\n\n" +
+					 "The Graham Visitor Center and public restrooms are open 9am - 5pm.\n",
+			 "(206) 543-8800\n\n",
+			 "Graham Visitor Center\n" +
+					 "\t2300 Arboretum Drive E\n" +
+					 "\tSeattle WA 98112\n",
+			 "Find Parking\n",
+			 "Park Restrooms\n",
+			 "Center for Urban Horticulture\n" +
+					 "\t3501 NE 41st St\n" +
+					 "\tSeattle, 98105\n",
+	 } ;
+	 
+//	 Integer[] rightIconId = {
+//			 R.drawable.hours,
+//			 R.drawable.call,
+//			 R.drawable.compass_colored,
+//			 R.drawable.parking_large,
+//			 R.drawable.restroom_large,
+//			 R.drawable.books
+//	  };
+
+	 Integer[] rightIconId = {
+			 R.drawable.greater_than_symbol,
+			 R.drawable.greater_than_symbol,
+			 R.drawable.greater_than_symbol,
+			 R.drawable.greater_than_symbol,
+			 R.drawable.greater_than_symbol,
+			 R.drawable.greater_than_symbol
 	  };
 
 	@Override

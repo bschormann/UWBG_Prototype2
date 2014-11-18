@@ -1,179 +1,111 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/LinearLayout0"
+    android:id="@+id/RelativeLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/background"
-	tools:context="${relativePackage}.${activityClass}"  >
-<!--    
-	android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
--->
-  
-    <LinearLayout
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout  
         android:id="@+id/LinearLayout1"
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
-        <Button
-            android:id="@+id/about"
-			android:contentDescription="@string/about_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginEnd="@dimen/smallbutton_layout_marginEnd"
-            android:layout_marginRight="@dimen/smallbutton_layout_marginRight"
-            android:layout_marginBottom="@dimen/smallbutton_layout_marginBottom"
-            android:background="@drawable/button_background"
-            android:drawableTop="@drawable/info"
-            android:text="@string/about"
-            style="?android:attr/borderlessButtonStyle" />
-        <Button
-            android:id="@+id/www"
-			android:contentDescription="@string/www_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginEnd="@dimen/smallbutton_layout_marginEnd"
-            android:layout_marginRight="@dimen/smallbutton_layout_marginRight"
-            android:layout_marginBottom="@dimen/smallbutton_layout_marginBottom"
-            android:background="@drawable/button_background"
-            android:drawableTop="@drawable/antenna_xl"
-            android:text="@string/www"
-            style="?android:attr/borderlessButtonStyle" />
-        <Button
-            android:id="@+id/help"
-			android:contentDescription="@string/help_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginEnd="@dimen/smallbutton_layout_marginEnd"
-            android:layout_marginRight="@dimen/smallbutton_layout_marginRight"
-            android:layout_marginBottom="@dimen/smallbutton_layout_marginBottom"
-            android:background="@drawable/button_background"
-            android:drawableTop="@drawable/question_mark_2_xl"
-            android:text="@string/help"
-            style="?android:attr/borderlessButtonStyle" />
-        <Button
-            android:id="@+id/provide_feedback"
-			android:contentDescription="@string/provide_feedback_button"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginEnd="@dimen/smallbutton_layout_marginEnd"
-            android:layout_marginRight="@dimen/smallbutton_adusted_layout_marginRight"
-            android:layout_marginBottom="@dimen/smallbutton_layout_marginBottom"
-            android:background="@drawable/button_background"
-            android:drawableTop="@drawable/feedback"
-            android:text="@string/provide_feedback"
-            style="?android:attr/borderlessButtonStyle" />    
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/text_welcome"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/welcome" />
-
-    <ImageView
-        android:id="@+id/HomepageImageView"
-		android:contentDescription="@string/homepage_image_view"
-		android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:src="@drawable/srija_chattapadyay2"
-		android:layout_marginBottom="@dimen/imageview_layout_marginBottom" 
-		android:adjustViewBounds="true"
-        android:layout_weight="1" />
-
-    <TextView
-        android:id="@+id/text_tothe"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/to_the" />
+        android:layout_height="wrap_content"   >      
+	    <ImageView
+	        android:id="@+id/HomepageImageView"
+			android:contentDescription="@string/homepage_image_view"
+			android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/srija_chattapadyay2"
+			android:layout_marginBottom="@dimen/imageview_layout_marginBottom" 
+			android:adjustViewBounds="true"
+	        android:layout_weight="1" />
+	</LinearLayout>
     
-    <LinearLayout
-        android:id="@+id/LinearLayout2"
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
-        <Button
-            android:id="@+id/featured_gardens"
-			android:contentDescription="@string/featured_gardens_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginEnd="@dimen/largebutton_layout_marginEnd"
-            android:layout_marginRight="@dimen/largebutton_layout_marginRight"
-            android:background="@drawable/button_background"
-            android:drawableTop="@drawable/featuredgarden"
-            android:text="@string/featured_gardens"
-            style="?android:attr/borderlessButtonStyle" />
-        <Button
-            android:id="@+id/visitor_information"
-			android:contentDescription="@string/visitor_information_button"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginEnd="@dimen/largebutton_layout_marginEnd"
-            android:layout_marginRight="@dimen/largebutton_layout_marginRight"
-            android:background="@drawable/button_background"
-            android:drawableTop="@drawable/information"
-            android:text="@string/visitor_information"
-            style="?android:attr/borderlessButtonStyle" />    
-    </LinearLayout>
+    <Button
+        android:id="@+id/featured_gardens"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/minWidth"
+        android:minHeight="@dimen/minHeight"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/LinearLayout1"
+        android:layout_marginRight="@dimen/buttonSideMargins"
+        android:layout_marginLeft="@dimen/buttonSideMargins"
+        android:layout_marginBottom="@dimen/buttonTopBottomMargins"
+        android:background="@drawable/button_background"
+        android:contentDescription="@string/featured_gardens_button"
+        android:drawableTop="@drawable/featuredgarden"
+        android:text="@string/featured_gardens" />
 
-    <LinearLayout
-        android:id="@+id/LinearLayout3"
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
-        <Button
-            android:id="@+id/arboretum_events"
-			android:contentDescription="@string/arboretum_events_button"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginEnd="@dimen/largebutton_layout_marginEnd"
-            android:layout_marginRight="@dimen/largebutton_layout_marginRight"
-            android:layout_marginTop="@dimen/largebutton_layout_marginTop"
-            android:background="@drawable/button_background"
-            android:drawableTop="@drawable/calendar"
-            android:text="@string/arboretum_events" 
-            style="?android:attr/borderlessButtonStyle" />
-        <Button
-            android:id="@+id/park_history"
-			android:contentDescription="@string/park_history_button"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginEnd="@dimen/largebutton_layout_marginEnd"
-            android:layout_marginRight="@dimen/largebutton_layout_marginRight"
-            android:layout_marginTop="@dimen/largebutton_layout_marginTop"
-            android:background="@drawable/button_background"
-            android:drawableTop="@drawable/yellowpinecone"
-            android:text="@string/park_history"
-            style="?android:attr/borderlessButtonStyle" />
-    </LinearLayout>
+    <Button
+        android:id="@+id/visitor_information"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/minWidth"
+        android:minHeight="@dimen/minHeight"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/featured_gardens"
+        android:layout_marginRight="@dimen/buttonSideMargins"
+        android:layout_marginLeft="@dimen/buttonSideMargins"
+        android:layout_marginBottom="@dimen/buttonTopBottomMargins"
+        android:background="@drawable/button_background"
+        android:contentDescription="@string/visitor_information_button"
+        android:drawableTop="@drawable/information"
+        android:text="@string/visitor_information" />
 
-    <LinearLayout
+    <Button
+        android:id="@+id/park_history"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/minWidth"
+        android:minHeight="@dimen/minHeight"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/featured_gardens"
+        android:layout_marginRight="@dimen/buttonSideMargins"
+        android:layout_marginLeft="@dimen/buttonSideMargins"
+        android:layout_marginBottom="@dimen/buttonTopBottomMargins"
+        android:background="@drawable/button_background"
+        android:contentDescription="@string/park_history_button"
+        android:drawableTop="@drawable/yellowpinecone"
+        android:text="@string/park_history" />
+
+    <Button
+        android:id="@+id/arboretum_events"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/minWidth"
+        android:minHeight="@dimen/minHeight"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/park_history"
+        android:layout_marginRight="@dimen/buttonSideMargins"
+        android:layout_marginLeft="@dimen/buttonSideMargins"
+        android:layout_marginBottom="@dimen/buttonTopBottomMargins"
+        android:background="@drawable/button_background"
+        android:contentDescription="@string/arboretum_events_button"
+        android:drawableTop="@drawable/calendar"
+        android:text="@string/arboretum_events" />
+        
+        <LinearLayout
         android:id="@+id/LinearLayout4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:orientation="horizontal" >
-
         <Button
             android:id="@+id/trails"
             style="?android:attr/borderlessButtonStyle"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/smallrectbutton_layout_marginEnd"
-            android:layout_marginRight="@dimen/smallrectbutton_layout_marginRight"
+            android:layout_marginRight="@dimen/smallrectbutton_adusted_layout_marginRight"
             android:layout_marginTop="@dimen/smallrectbutton_layout_marginTop"
-            android:layout_weight="1"
             android:background="@drawable/button_background_rect"
+            android:layout_weight="1"
             android:contentDescription="@string/trails_button"
             android:drawableTop="@drawable/trails"
             android:text="@string/trails" />
@@ -181,13 +113,13 @@
         <Button
             android:id="@+id/plant_lookup"
             style="?android:attr/borderlessButtonStyle"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/smallrectbutton_layout_marginEnd"
-            android:layout_marginRight="@dimen/smallrectbutton_layout_marginRight"
+            android:layout_marginRight="@dimen/smallrectbutton_adusted_layout_marginRight"
             android:layout_marginTop="@dimen/smallrectbutton_layout_marginTop"
-            android:layout_weight="1"
             android:background="@drawable/button_background_rect"
+            android:layout_weight="1"
             android:contentDescription="@string/plant_lookup_button"
             android:drawableTop="@drawable/plantlookup"
             android:text="@string/plant_lookup" />
@@ -195,13 +127,13 @@
         <Button
             android:id="@+id/map"
             style="?android:attr/borderlessButtonStyle"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/smallrectbutton_layout_marginEnd"
-            android:layout_marginRight="@dimen/smallrectbutton_layout_marginRight"
+            android:layout_marginRight="@dimen/smallrectbutton_adusted_layout_marginRight"
             android:layout_marginTop="@dimen/smallrectbutton_layout_marginTop"
-            android:layout_weight="1"
             android:background="@drawable/button_background_rect"
+            android:layout_weight="1"
             android:contentDescription="@string/map_button"
             android:drawableTop="@drawable/greenmap"
             android:text="@string/map" />
@@ -209,16 +141,15 @@
         <Button
             android:id="@+id/bookmarks"
             style="?android:attr/borderlessButtonStyle"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/smallrectbutton_layout_marginEnd"
             android:layout_marginRight="@dimen/smallrectbutton_adusted_layout_marginRight"
             android:layout_marginTop="@dimen/smallrectbutton_layout_marginTop"
-            android:layout_weight="1"
             android:background="@drawable/button_background_rect"
+            android:layout_weight="1"
             android:contentDescription="@string/bookmarks_button"
             android:drawableTop="@drawable/greenbookmarks"
-            android:text="@string/bookmarks" />
+            android:text="@string/bookmarks" />   
     </LinearLayout>
-
-</LinearLayout>
+</RelativeLayout>

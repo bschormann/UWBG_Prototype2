@@ -37,10 +37,10 @@
     <string name="www">Website</string>
     <string name="help">Help</string>
     <string name="provide_feedback">Feedback</string>
-    <string name="featured_gardens">Featured Gardens</string>
-    <string name="visitor_information">Visitor Information</string>
-    <string name="arboretum_events">Arboretum Events</string>
-    <string name="park_history">Park History</string>
+    <string name="featured_gardens">Featured\nGardens</string>
+    <string name="visitor_information">Visitor\nInformation</string>
+    <string name="arboretum_events">Arboretum\nEvents</string>
+    <string name="park_history">Park\nHistory</string>
     <string name="trails">"Trails\n"</string>
     <string name="plant_lookup">"Plant\nLookup"</string>
     <string name="map">"Map\n"</string>

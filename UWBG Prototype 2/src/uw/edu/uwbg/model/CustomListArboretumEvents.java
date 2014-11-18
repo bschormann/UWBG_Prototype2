@@ -34,9 +34,10 @@ import android.widget.TextView;
 
 /**
  * Used to create ListView for ArboretumEvents
- * @author Brett Schormann
+ * @author 	Brett Schormann
  * @version 0.1
- * @since 0.1
+ * 			0.2 Corrected error and prepared for integration of Capstone format. (BS)
+ * @since 	0.1
  */
 public class CustomListArboretumEvents  extends ArrayAdapter<String> {
 	private final Activity context;
@@ -48,8 +49,9 @@ public class CustomListArboretumEvents  extends ArrayAdapter<String> {
 	/**
 	 * 
 	 * @param context
-	 * @param text
 	 * @param leftIconId
+	 * @param text
+	 * @param rightIconId
 	 */
 	public CustomListArboretumEvents(Activity context, Integer[] leftIconId, String[] text, Integer[] rightIconId) {
 		super(context, R.layout.list_single_row_arboretum_events, text);
@@ -70,18 +72,15 @@ public class CustomListArboretumEvents  extends ArrayAdapter<String> {
 	@Override
 	public View getView(int position, View view, ViewGroup parent) {
 		LayoutInflater inflater = context.getLayoutInflater();
-		View rowView= inflater.inflate(R.layout.list_single_row_visitor_information, null, true);
+		View rowView= inflater.inflate(R.layout.list_single_row_arboretum_events, null, true);
 
-//		ImageView imageView = (ImageView) rowView.findViewById(R.id.lefticonimg);
-//		imageView.setImageResource(leftIconId[position]);
+		ImageView imageView = (ImageView) rowView.findViewById(R.id.lefticonimg);
+		imageView.setImageResource(leftIconId[position]);
 
-//    	TextView txtTitle = (TextView) rowView.findViewById(R.id.txt);
-//		txtTitle.setText(text[position]);
-		
 		TextView txtTitle = (TextView) rowView.findViewById(R.id.txt);
 		customFont.setTextViewParameters(context, txtTitle, "OpenSans-BoldItalic", "MEDIUM_TEXT_SIZE", text[position], false);
 		
-		ImageView imageView = (ImageView) rowView.findViewById(R.id.righticonimg);
+		imageView = (ImageView) rowView.findViewById(R.id.righticonimg);
 		imageView.setImageResource(rightIconId[position]);
 		
     	Button btn = (Button) context.findViewById(R.id.trails);

@@ -29,7 +29,7 @@
     	<shape xmlns:android="http://schemas.android.com/apk/res/android" >
     	<solid android:color="@color/LightSteelBlue" />
     	<corners 
-    	android:radius="10dp"/>
+    	android:radius="@dimen/rect_button_radius"/>
     	</shape>
  	</item>     
  	

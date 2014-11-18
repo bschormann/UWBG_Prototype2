@@ -32,7 +32,10 @@
     <dimen name="smallrectbutton_adusted_layout_marginRight">1dp</dimen>
     <dimen name="smallrectbutton_layout_marginTop">5dp</dimen>
     
-    
+    <dimen name="minHeight">120dp</dimen>
+    <dimen name="minWidth">120dp</dimen>
+    <dimen name="buttonSideMargins">35dp</dimen>
+    <dimen name="buttonTopBottomMargins">10dp</dimen>
     
     <!-- Image View settings -->
     <dimen name="imageview_layout_marginBottom">10dp</dimen>

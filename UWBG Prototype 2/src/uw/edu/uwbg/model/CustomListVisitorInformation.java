@@ -36,6 +36,10 @@ import android.widget.TextView;
  * Used to create ListView for VisitorInformation
  * @author Brett Schormann
  * @version 0.1
+ * 			0.2 11/17/2014
+ * 			Changes to use linear layout at bottom of screen (BS)
+ * 			0.3 11/18/2014
+ * 			Changes to icons so that the screen layout follows Capstone wire raps. (BS)
  */
 public class CustomListVisitorInformation  extends ArrayAdapter<String> {
 	private final Activity context;
@@ -47,8 +51,9 @@ public class CustomListVisitorInformation  extends ArrayAdapter<String> {
 	/**
 	 * 
 	 * @param context
-	 * @param text
 	 * @param leftIconId
+	 * @param text
+	 * @param rightIconId
 	 */
 	public CustomListVisitorInformation(Activity context, Integer[] leftIconId, String[] text, Integer[] rightIconId) {
 		super(context, R.layout.list_single_row_visitor_information, text);
@@ -61,9 +66,9 @@ public class CustomListVisitorInformation  extends ArrayAdapter<String> {
 	
 	/**
 	 * Formats a single row of the list view
-	 * @param position
-	 * @param view
-	 * @param parent
+	 * @param 	position
+	 * @param 	view
+	 * @param 	parent
 	 * @return rowView = row of the list view denoted by position
 	 */
 	@Override
@@ -71,19 +76,16 @@ public class CustomListVisitorInformation  extends ArrayAdapter<String> {
 		LayoutInflater inflater = context.getLayoutInflater();
 		View rowView= inflater.inflate(R.layout.list_single_row_visitor_information, null, true);
 
-//		ImageView imageView = (ImageView) rowView.findViewById(R.id.lefticonimg);
-//		imageView.setImageResource(leftIconId[position]);
+		ImageView imageView = (ImageView) rowView.findViewById(R.id.lefticonimg);
+		imageView.setImageResource(leftIconId[position]);
 
-//    	TextView txtTitle = (TextView) rowView.findViewById(R.id.txt);
-//		txtTitle.setText(text[position]);
-		
 		TextView txtTitle = (TextView) rowView.findViewById(R.id.txt);
 		customFont.setTextViewParameters(context, txtTitle, "OpenSans-BoldItalic", "MEDIUM_TEXT_SIZE", text[position], false);
 		
-		ImageView imageView = (ImageView) rowView.findViewById(R.id.righticonimg);
+		imageView = (ImageView) rowView.findViewById(R.id.righticonimg);
 		imageView.setImageResource(rightIconId[position]);
-		
-    	Button btn = (Button) context.findViewById(R.id.trails);
+
+		Button btn = (Button) context.findViewById(R.id.trails);
     	customFont.setButtonParameters(context, btn, "OpenSans-ExtraBoldItalic", "MEDIUM_TEXT_SIZE"); 
     	btn = (Button) context.findViewById(R.id.plant_lookup);
     	customFont.setButtonParameters(context, btn, "OpenSans-ExtraBoldItalic", "MEDIUM_TEXT_SIZE"); 
