@@ -60,7 +60,6 @@ import android.widget.Toast;
  * 			Changes to support integration of FeaturedGardens (BS)
  * 			0.6 11/12/2014
  * 			Changed so that Capstone project format is used. (BS)
- * @since 	0.1
  */
 public class MainActivity extends Activity {
 	
@@ -133,7 +132,6 @@ public class MainActivity extends Activity {
      * 
      * @author Brett Schormann
      * @version 0.2 10/27/2014
-     * @since 0.1
      * 
      * @see <a href="http://stackoverflow.com/questions/17587152/how-to-do-smooth-transition-from-one-image-to-another">http://stackoverflow.com/questions/17587152/how-to-do-smooth-transition-from-one-image-to-another></a>
      * @param imageView		The View which displays the images
@@ -194,7 +192,6 @@ public class MainActivity extends Activity {
      * 
      * @author Brett Schormann
      * @version 0.1 10/2014
-     * @since 0.1
      */
     private void setupButtons() {
     	CustomFont customFont = CustomFont.getCustomFont();
@@ -236,7 +233,6 @@ public class MainActivity extends Activity {
      * @version 0.1 10/2014
      * 			0.2 11/13/2014 Changed to inclue Capstone project format. (BS)
      * 			0.3 11/16/2014 Changed font to OpenSans-BoldItalic from OpenSans-LightItalic
-     * @since 	0.1
      */
     private void adjustTextOnHomeScreen() {
     	
@@ -264,7 +260,6 @@ public class MainActivity extends Activity {
      * 			Added code to use DownloadPDFTask (BS)
      * 			0.4 11/16/2014
      * 			Changed backdoor from About to Visitor Information
-     * @since 	0.1
      */
     private void setupButtonListeners() {
     	Button button = null;
@@ -480,7 +475,6 @@ public class MainActivity extends Activity {
      * @author 	Brett Schormann
      * @version 0.2 10/28/2014
      * 			Added email addresses. (BS)
-     * @since 	0.1
      */
     private void sendEmail() {
         Intent i = new Intent(Intent.ACTION_SEND);

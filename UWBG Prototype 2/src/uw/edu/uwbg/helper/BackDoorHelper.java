@@ -25,7 +25,7 @@ public class BackDoorHelper {
 	private boolean useProductionParkHistory = true;
 	private boolean useProductionArboretumEvents = true;
 	private boolean useProductionPlantLookup = true;
-	private boolean useCapstoneProject = true;
+	private boolean useCapstoneProject = false;
 
 	public boolean isUseProductionPlantLookup() {
 		return useProductionPlantLookup;

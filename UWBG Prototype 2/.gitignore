@@ -8,6 +8,8 @@
 *.so
 # Following not in .gitignore from github
 /bin
+*.bin
+*/bin
  
 # Packages #
 ############

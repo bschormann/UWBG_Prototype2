@@ -29,7 +29,6 @@ import android.os.Bundle;
 /**
  * @author 	Brett Schormann
  * @version 0.1 10/2014
- * @since 	0.1
  */
 public class TrailsActivity extends Activity {
 
