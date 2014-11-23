@@ -144,7 +144,7 @@ import android.widget.Toast;
 				break;
 			}
 			default: {
-                Toast.makeText(VisitorInformationActivity.this, "An app error has occurred " + text[position], Toast.LENGTH_SHORT).show();
+                Toast.makeText(VisitorInformationActivity.this, "An app error has occurred " + position, Toast.LENGTH_SHORT).show();
 				break;
 			}
 		}

@@ -73,25 +73,15 @@
     <string-array name="featured_gardens_titles">
         <item>Pacific Connections Garden</item>
         <item>Witt Winter Garden</item>
-        <item>Orin and Althea Soest Herbaceous Display Garden</item>
-        <item>Seattle Garden Club Fragrance Garden</item>
-      	<item>Marilou Goodfellow Grove</item>
-        <item>McVay Courtyard</item>
-        <item>Union Bay Natural Area</item>
+        <item>Woodland Garden</item>
         <item>Shoreline</item>
         <item>Japanese Garden</item>
-        <item>Yesler Swamp Trail</item>
         </string-array>
     <string-array name="featured_gardens_urls">
         <item>http://depts.washington.edu/uwbg/gardens/wpa/pacific_connections.shtml</item>
         <item>http://depts.washington.edu/uwbg/gardens/wpa/witt_winter.shtml</item>
-        <item>http://depts.washington.edu/uwbg/gardens/cuh/soest.php</item>
-        <item>http://depts.washington.edu/uwbg/gardens/cuh/fragrance.shtml</item>
-      	<item>http://depts.washington.edu/uwbg/gardens/cuh/goodfellow_grove.shtml</item>
-        <item>http://depts.washington.edu/uwbg/gardens/cuh/mcvay.shtml</item>
-        <item>http://depts.washington.edu/uwbg/research/ubna.shtml</item>
+        <item>http://depts.washington.edu/uwbg/gardens/wpa/woodland.shtml</item>
         <item>http://depts.washington.edu/uwbg/gardens/wpa/shoreline.shtml</item>
         <item>http://www.seattle.gov/parks/parkspaces/japanesegarden.htm</item>
-        <item>http://yeslerswamp.org/</item>
         </string-array>
 </resources>
