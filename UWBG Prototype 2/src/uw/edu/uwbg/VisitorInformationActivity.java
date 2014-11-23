@@ -126,7 +126,6 @@ import android.widget.Toast;
 				
 				Intent callIntent = new Intent(Intent.ACTION_CALL);
 				callIntent.setData(Uri.parse("tel:2065438616"));
-//				callIntent.setData(Uri.parse("tel:2065241301"));	// home phone for testing
 				startActivity(callIntent); 
 				break;
 			}
