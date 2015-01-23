@@ -55,14 +55,12 @@ import android.widget.Toast;
 	 public static Context context;
 	
 	 ListView list;
-	 // TODO Decide whether to delete this array or keep it.
 	 	 
 	 Integer[] leftIconId = {
 			 R.drawable.hours,
 			 R.drawable.call,
 			 R.drawable.directions,
 			 R.drawable.compass_colored,
-			 R.drawable.restroom_large,
 			 R.drawable.books
 	 };
 
@@ -70,9 +68,9 @@ import android.widget.Toast;
 			 "\nThe Washington Park Arboretum (Graham Visitor Center)\n" + 
 					 "\t2300 Arboretum Drive E\n" +
 					 "\tSeattle WA 98112\n",
-			 "\n(206) 543-8616\n",
+			 "\n\t(206) 543-8616\n",
 			 "\nDirections, Parking, Restrooms\n",
-			 "Tours",
+			 "\tTours",
 			 "\nThe Center for Urban Horticulture(Elizabeth C. Miller Library, Otis Douglas Hyde Herbarium)\n" +
 					 "\t3501 NE 41st St\n" +
 					 "\tSeattle, 98105\n",

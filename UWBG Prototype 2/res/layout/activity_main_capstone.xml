@@ -16,8 +16,9 @@
 			android:contentDescription="@string/homepage_image_view"
 			android:layout_width="0dp"
 	        android:layout_height="wrap_content"
-	        android:src="@drawable/srija_chattapadyay2"
+	        android:src="@drawable/acer_palmatum_jeter"
 			android:layout_marginBottom="@dimen/imageview_layout_marginBottom" 
+			android:scaleType="fitXY"
 			android:adjustViewBounds="true"
 	        android:layout_weight="1" />
 	</LinearLayout>

@@ -54,7 +54,8 @@ public class FeaturedGardensActivity extends Activity {
 						R.drawable.wittwinter_howard,
 						R.drawable.woodland,
 						R.drawable.shoreline_welty,
-						R.drawable.japanese_garden};				
+						R.drawable.japanese_garden,
+						};				
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

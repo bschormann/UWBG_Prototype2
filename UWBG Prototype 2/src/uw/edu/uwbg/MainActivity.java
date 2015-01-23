@@ -60,16 +60,35 @@ import android.widget.Toast;
  * 			Changes to support integration of FeaturedGardens (BS)
  * 			0.6 11/12/2014
  * 			Changed so that Capstone project format is used. (BS)
+ * 			0.7 11/24/2014
+ * 			Added some images from Tracy
  */
 public class MainActivity extends Activity {
 	
 	private String TAG = MainActivity.this.getClass().getSimpleName();
 	
 	private final String[] mImages = {	
-			"arboretum15",			"hydrangea_macrophylla_jeter",	"srija_chattapadyay2", 
-			"kidsfishing",			"arboretum15",
-			"autumngrape_howard",	"maplemalk_jeter",
-			"pacconshelter_wott", 	"sorbus_commixta_embley_jeter",	"ubna_crabapple_howard"};
+			"acer_palmatum_jeter.jpg", 												
+			"arboretum15",										
+			"autumngrape_howard",				
+			//"clematis_viticella.jpg",				// bad	
+			//"disanthus_cercidifolius_jeter.jpg",	// bad
+			//"fothergilla_major_jeter.jpg",		// bad
+			//"franklinia_alatamaha_jeter.jpg",		// bad
+			//"gvc_east_patio_entry.jpg",			// bad							
+			//"hydrangea_heteromalla.jpg",			// bad					
+			"hydrangea_macrophylla_jeter",	
+			"kidsfishing",												
+			"maplemalk_jeter",									
+			"pacconshelter_wott", 
+			//"rhododendron_auriculatum_8_10_06_lookoutpond_wpa_sj.jpg",	// bad 	
+			//"rhododendron_schlippenbachii_wpa_10_06_sj.jpg",				// bad
+			//"s0484054.jpg",						// bad
+			"sorbus_commixta_embley_jeter",
+			"srija_chattapadyay2", 		
+			"ubna_crabapple_howard", 							
+			//"winter_garden1.jpg"					// bad
+			};
 
 	private final String WELCOME = "Welcome to the ...";
 	private final String WPA = " ...Washington Park Arboretum";
